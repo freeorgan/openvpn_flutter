@@ -62,6 +62,8 @@ class OpenVPN {
   ///Use tempDateTime to countdown, especially on android that has delays
   DateTime? _tempDateTime;
 
+  VPNStage? _lastStage;
+
   /// is a listener to see vpn status detail
   final Function(VpnStatus? data)? onVpnStatusChanged;
 
